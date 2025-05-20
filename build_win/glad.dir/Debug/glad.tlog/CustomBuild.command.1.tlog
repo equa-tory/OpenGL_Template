@@ -1,0 +1,10 @@
+^F:\FILES_F\_C++\OPENGL_TEST02\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Files_F/_C++/OpenGL_Test02 -BF:/Files_F/_C++/OpenGL_Test02/build_win --check-stamp-file F:/Files_F/_C++/OpenGL_Test02/build_win/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
